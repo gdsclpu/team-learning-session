@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Talwind CSS Todo App</title>
+
+    <!-- tailwind css cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <h1 class="text-center text-5xl py-10 text-blue-500 font-extrabold">
+        Todo App
+    </h1>
+
+    <div class="w-3/5 flex flex-col items-center justify-center gap-5 mx-auto mt-20">
+        <form class="flex w-full items-center justify-center  flex-row gap-2">
+            <input type="text" class="border border-blue-500 border-2 px-3 py-2 w-4/5" placeholder="Add todo" />
+            <button class="bg-blue-500 text-white font-bold p-2 hover:bg-blue-800 transition-all">
+                + Add
+            </button>
+        </form>
+
+        <table class="mt-5 w-4/5">
+            <thead class="py-3">
+                <tr>
+                    <th>
+                        Id
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Action
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center ">
+                    <td class="py-2">
+                        1
+                    </td>
+                    <td class="py-2">
+                        Do coding
+                    </td>
+                    <td class="py-2">
+                        <button class="bg-blue-500 text-white font-bold p-1 px-2 hover:bg-blue-800 transition-all">
+                            Done
+                        </button>
+                        <button class="bg-red-500 text-white font-bold p-1 px-2 hover:bg-red-800 transition-all">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
